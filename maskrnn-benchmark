@@ -1,7 +1,7 @@
 #!/bin/sh
-# first, make sure that your conda is setup properly with the right environment
-# for that, check that `which conda`, `which pip` and `which python` points to the
-# right path. From a clean conda env, this is what you need to do
+# first, make sure that your virtualenv is setup properly with the right environment
+#make sure your nvcc directory is added to the PATH properly or else you will be wondering hours
+#to find the problem. For more clarity check in https://askubuntu.com/questions/885610/nvcc-version-command-says-nvcc-is-not-installed
 
 # maskrcnn_benchmark and coco api dependencies
 pip install ninja yacs cython matplotlib tqdm opencv-python
