@@ -1,0 +1,13 @@
+#!/bin/sh
+# remove existing repositories
+sudo apt-add-repository -r ppa:graphics-drivers/ppa
+# update repositories
+sudo apt update
+# completely remove nvidia drivers
+sudo apt remove nvidia*
+sudo apt autoremove 
+
+# invoke driver auto install
+sudo ubuntu-drivers autoinstall
+
+# for more info check "https://askubuntu.com/questions/1077493/unable-to-install-nvidia-drivers-on-ubuntu-18-04"
